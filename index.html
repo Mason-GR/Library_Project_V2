@@ -35,18 +35,35 @@
           <label for="author">Author</label>
           <input type="text" id="author" class="form-control" />
         </div>
-        <div
-          class="btn-group mt-3"
-          role="group"
-          aria-label="Basic checkbox toggle button group"
-        >
+        <div class="form-check">
           <input
+            class="form-check-input"
             type="checkbox"
-            class="btn-check"
-            id="btncheck1"
-            autocomplete="off"
+            value=""
+            id="flexCheckDefault"
           />
-          <label class="btn btn-primary" for="btncheck1">Read</label>
+          <label class="form-check-label" for="flexCheckDefault">
+            Default checkbox
+          </label>
+        </div>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="flexCheckChecked"
+            checked=""
+          />
+          <label class="form-check-label" for="flexCheckChecked">
+            Checked checkbox
+          </label>
+        </div>
+        <div class="d-grid gap-2 mt-3">
+          <input
+            type="submit"
+            value="Add Book"
+            class="btn btn-lg btn-primary"
+          />
         </div>
       </form>
     </div>
