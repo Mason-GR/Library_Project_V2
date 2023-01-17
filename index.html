@@ -35,30 +35,21 @@
           <label for="author">Author</label>
           <input type="text" id="author" class="form-control" />
         </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="checkbox"
-            value=""
-            id="flexCheckDefault"
-          />
-          <label class="form-check-label" for="flexCheckDefault">
-            Default checkbox
-          </label>
+        <div class="form-group">
+          <label class="form-check-label" for="flexCheckDefault"
+            >Read Book</label
+          >
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="flexCheckDefault"
+            />
+          </div>
         </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="checkbox"
-            value=""
-            id="flexCheckChecked"
-            checked=""
-          />
-          <label class="form-check-label" for="flexCheckChecked">
-            Checked checkbox
-          </label>
-        </div>
-        <div class="d-grid gap-2 mt-3">
+
+        <div class="d-grid gap-2 mt-2">
           <input
             type="submit"
             value="Add Book"
@@ -66,6 +57,15 @@
           />
         </div>
       </form>
+      <table class="table table-striped mt-5">
+        <tr>
+          <th>Title</th>
+          <th>Author</th>
+          <th>Read</th>
+          <th>Remove</th>
+        </tr>
+        <tbody id="book-list"></tbody>
+      </table>
     </div>
   </body>
 </html>
